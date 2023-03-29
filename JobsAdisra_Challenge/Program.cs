@@ -1,27 +1,37 @@
 ﻿/*using JobsAdisra_Challenge.Exercises;*/
+using JobsAdisra_Challenge.Exercicios.Exercicio_1;
+using JobsAdisra_Challenge.Exercicios.Exercicio_2;
+using JobsAdisra_Challenge.Exercicios.Exercicio_3;
+using JobsAdisra_Challenge.Exercicios.Exercicio_4;
+
 class Program
 {
 
     static void Main(string[] args)
     {
-        Console.WriteLine("MyBoy ");
-        int n = Convert.ToInt16(Console.ReadLine());
+        Console.WriteLine("##### EXERCÍCIO 1 #####");
+        Fibonnaci fibonnaci = new Fibonnaci();
+        Console.WriteLine(fibonnaci.calculoFibonnaci());
 
-        if (n <= 1)
-        {
-            Console.WriteLine("O valor de n é: " + n);
-        }
-        else
-        {
-            int[] fibonacciSequence = new int[n + 1];
-            fibonacciSequence[1] = 1;
+        /*Console.WriteLine("\n##### EXERCÍCIO 2 #####");
+        MaisParesOuImpares maisParesOuImpares = new MaisParesOuImpares();
+        var matriz = new int[4, 2] { { 16, 52 }, { 91, 43 }, { 77, 28 }, { 12, 12 } };
+        Console.WriteLine(maisParesOuImpares.MaiorQuantidade(matriz, 1, 2));
 
-            for (int i = 2; i <= n; i++)
-            {
-                fibonacciSequence[i] = fibonacciSequence[i - 1] + fibonacciSequence[i - 2];
-            }
+        Console.WriteLine("\n##### EXERCÍCIO 3 #####");
+        Exercicio3Resposta ex = new Exercicio3Resposta();
+        Console.WriteLine(ex.Resposta);
 
-            Console.WriteLine("O valor do qual n é: " + n);
-        }
+
+        Console.WriteLine("\n##### EXERCÍCIO 4 #####");
+
+        CarroDiesel carroDiesel = new CarroDiesel(12, 12, 2, 1, 1000, 30);
+        CarroFlex carroFlex = new CarroFlex(12, 12, 2, 1, 1000, 20);
+        CarroEletrico carroEletrico = new CarroEletrico(12, 12, 2, 1, 1000, 10);
+
+
+        Console.WriteLine("Diesel: " + carroDiesel.ValorVenda);
+        Console.WriteLine("Flex: " + carroFlex.ValorVenda);
+        Console.WriteLine("Eletrico: " + carroEletrico.ValorVenda);*/
     }
 }
