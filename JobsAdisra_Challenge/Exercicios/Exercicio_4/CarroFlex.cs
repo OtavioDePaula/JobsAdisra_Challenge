@@ -21,8 +21,5 @@ namespace JobsAdisra_Challenge.Exercicios.Exercicio_4
             CustoProducao = custoProducao;
             Imposto = imposto;
         }
-
-        
-
     }
 }

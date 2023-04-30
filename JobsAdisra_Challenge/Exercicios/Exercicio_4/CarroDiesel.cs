@@ -8,6 +8,9 @@ namespace JobsAdisra_Challenge.Exercicios.Exercicio_4
 {
     class CarroDiesel : Carro
     {
+        public double CapacidadeCarga { get; set; }
+        public int VolumeCarga { get; set; }
+
         public CarroDiesel(double capacidadeCarga, int volumeCarga, int numeroMotor, int numeroChassi, double custoProducao, double imposto) : base(numeroMotor, numeroChassi, custoProducao, imposto)
         {
             CapacidadeCarga = capacidadeCarga;
@@ -18,8 +21,7 @@ namespace JobsAdisra_Challenge.Exercicios.Exercicio_4
             Imposto = imposto;
         }
 
-        public double CapacidadeCarga { get; set; }
-        public int VolumeCarga { get; set; }
+        
 
    
     }
